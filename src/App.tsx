@@ -10,7 +10,6 @@ import AddShoppingCart from "@material-ui/icons/AddShoppingCart";
 import Badge from "@material-ui/core";
 //styles
 import { Wrapper } from "./App.styles";
-import "./App.scss";
 // Types
 export type CartItemType = {
   id: number;
@@ -42,7 +41,9 @@ const App = () => {
     <Wrapper>
       <Grid container spacing={3}>
         {data?.map((item) => (
-          <Grid item key={item.id} xs={12}></Grid>
+          <Grid item key={item.id} sm={4} xs={12}>
+            <Item item={item} handleAddToCart={handleAddToCart} />
+          </Grid>
         ))}
       </Grid>
     </Wrapper>
