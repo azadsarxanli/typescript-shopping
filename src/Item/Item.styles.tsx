@@ -10,5 +10,16 @@ export const Wrapper = styled.div`
   height: 100%;
 
   button {
+    border-radius: 0 0 10px 10px;
+  }
+  img {
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+  }
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    height: 100%;
   }
 `;
